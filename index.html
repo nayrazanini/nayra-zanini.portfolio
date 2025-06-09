@@ -5,24 +5,111 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Náyra Zanini | Portfólio</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #000000; /* Fundo preto */
+      color: #ffffff; /* Texto branco */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+    }
+    strong {
+      font-weight: 700; /* Negrito para destaque */
+      color: #fbbf24; /* Amarelo para destacar */
+    }
+    a {
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    a:hover {
+      color: #fbbf24;
+    }
+    header, section, footer {
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 1.5rem;
+    }
+    header {
+      background: #111111;
+      box-shadow: 0 4px 12px rgba(251, 191, 36, 0.3);
+      border-radius: 8px;
+      margin-top: 2rem;
+      margin-bottom: 3rem;
+      text-align: center;
+    }
+    h1 {
+      color: #fbbf24;
+      font-size: 3rem;
+      margin-bottom: 0.2rem;
+    }
+    h2 {
+      border-bottom: 2px solid #fbbf24;
+      padding-bottom: 0.3rem;
+      margin-bottom: 1rem;
+      color: #fbbf24;
+      font-size: 2rem;
+    }
+    h3 {
+      color: #fbbf24;
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+    p, li {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+      color: #e5e7eb; /* cinza claro */
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    li {
+      background-color: #1f2937;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(251, 191, 36, 0.15);
+    }
+    footer {
+      margin-top: 4rem;
+      padding-bottom: 2rem;
+      font-size: 0.9rem;
+      color: #9ca3af;
+      text-align: center;
+    }
+    .contato-links a {
+      margin: 0 0.5rem;
+      color: #fbbf24;
+    }
+    .contato-links a:hover {
+      color: #fff;
+    }
+  </style>
 </head>
-<body class="bg-gradient-to-br from-indigo-100 to-purple-200 min-h-screen text-gray-800">
+<body>
 
   <!-- CABEÇALHO -->
-  <header class="text-center p-10 bg-white shadow">
-    <h1 class="text-4xl font-bold text-indigo-700">Náyra Zanini</h1>
-    <p class="text-xl mt-2 text-gray-600 italic">Tecnologia com propósito: transformar, incluir e simplificar.</p>
+  <header>
+    <h1>Náyra Zanini</h1>
+    <!-- Contatos centralizados abaixo do nome -->
+    <nav class="contato-links" style="margin-top: 0.5rem; margin-bottom: 1.5rem;">
+      <a href="mailto:zanini.n@outlook.com.br">✉️ Email</a> |
+      <a href="https://www.linkedin.com/in/nayra-zanini" target="_blank">💼 LinkedIn</a> |
+      <a href="https://github.com/nayrazanini" target="_blank">🐙 GitHub</a> |
+      <a href="https://wa.me/55SEUNUMERO" target="_blank">📱 WhatsApp</a>
+    </nav>
+    <p><em><strong>Tecnologia com propósito:</strong> transformar, incluir e simplificar.</em></p>
   </header>
 
   <!-- SOBRE -->
-  <section class="p-6 max-w-4xl mx-auto">
-    <h2 class="text-2xl font-bold mb-4">👩‍💻 Sobre Mim</h2>
-    <p class="mb-4">
-      Sou formada em Administração com Ênfase em Tecnologia da Informação pela FIAP e Análise e Desenvolvimento de Sistemas pela UNIP.
-Estou expandindo minha atuação para a área técnica por meio da pós-graduação em Engenharia de Software. Minha experiência inclui suporte administrativo e técnico, análise de dados, testes básicos e otimização de processos em ambientes corporativos de TI e administrativos.
+  <section>
+    <h2>👩‍💻 Sobre Mim</h2>
+    <p>
+      Sou formada em <strong>Administração com Ênfase em Tecnologia da Informação</strong> pela FIAP e <strong>Análise e Desenvolvimento de Sistemas</strong> pela UNIP.
+      Estou expandindo minha atuação para a área técnica por meio da <strong>pós-graduação em Engenharia de Software</strong>. Minha experiência inclui suporte administrativo e técnico, análise de dados, testes básicos e otimização de processos em ambientes corporativos de TI e administrativos.
     </p>
-    <p class="mb-4">
-      Meu propósito com a tecnologia é aproximar as pessoas das soluções, promovendo acessibilidade digital com empatia, paciência e clareza. Acredito que boas práticas começam antes mesmo da programação — com escuta ativa, levantamento de requisitos, modelagem e planejamento. 
+    <p>
+      Meu propósito com a tecnologia é aproximar as pessoas das soluções, promovendo <strong>acessibilidade digital</strong> com empatia, paciência e clareza. Acredito que boas práticas começam antes mesmo da programação — com <strong>escuta ativa, levantamento de requisitos, modelagem e planejamento</strong>.
     </p>
     <p>
       Atualmente, estou desenvolvendo projetos pessoais que unem engenharia de software, educação digital e autodesenvolvimento. Eles refletem minha vivência ao ajudar pessoas próximas que têm dificuldade com tecnologia, transformando essa experiência em ferramentas reais e didáticas que orientam e simplificam o uso de celulares, apps e sistemas.
@@ -30,40 +117,24 @@ Estou expandindo minha atuação para a área técnica por meio da pós-graduaç
   </section>
 
   <!-- PROJETOS -->
-  <section class="p-6 max-w-4xl mx-auto">
-    <h2 class="text-2xl font-bold mb-4">💼 Projetos em Desenvolvimento</h2>
-    <ul class="space-y-4">
-      <li class="bg-white p-4 rounded shadow">
-        <h3 class="font-bold text-lg text-purple-700">📱 TECNOTION</h3>
-        <p>Plataforma de microcursos criada para auxiliar pessoas com dificuldade em tecnologia. O objetivo é ensinar, com paciência e clareza, como utilizar celulares, aplicativos e recursos digitais com autonomia.</p>
-        <p class="text-sm italic text-gray-500">Em desenvolvimento — protótipo e modelagem em andamento</p>
+  <section>
+    <h2>💼 Projetos em Desenvolvimento</h2>
+    <ul>
+      <li>
+        <h3>📱 TecNotion</h3>
+        <p>Plataforma de microcursos criada para auxiliar pessoas com dificuldade em tecnologia. O objetivo é ensinar, com paciência e clareza, como utilizar celulares, aplicativos e recursos digitais com <strong>autonomia</strong>.</p>
+        <p class="italic text-gray-400">Em desenvolvimento — protótipo e modelagem em andamento</p>
       </li>
-      <li class="bg-white p-4 rounded shadow">
-        <h3 class="font-bold text-lg text-purple-700">🧠 Autodesenvolvimento Digital</h3>
-        <p>Projeto de apoio ao crescimento pessoal com base em psicologia, neurociência e ferramentas tecnológicas. Visa criar fases, desafios e modelos interativos de autoaperfeiçoamento.</p>
-        <p class="text-sm italic text-gray-500">Em desenvolvimento — estruturação conceitual e requisitos sendo definidos</p>
+      <li>
+        <h3>🧠 Autodesenvolvimento Digital</h3>
+        <p>Projeto de apoio ao crescimento pessoal com base em psicologia, neurociência e ferramentas tecnológicas. Visa criar fases, desafios e modelos interativos de <strong>autoaperfeiçoamento</strong>.</p>
+        <p class="italic text-gray-400">Em desenvolvimento — estruturação conceitual e requisitos sendo definidos</p>
       </li>
     </ul>
   </section>
 
-  <!-- CONTATO -->
-  <p>
-  <a href="mailto:zanini.n@outlook.com.br" style="text-decoration:none; color:#4f46e5; font-weight:bold;">
-    ✉️ Email
-  </a> |
-  <a href="https://www.linkedin.com/in/nayra-zanini" target="_blank" style="text-decoration:none; color:#0a66c2; font-weight:bold;">
-    💼 LinkedIn
-  </a> |
-  <a href="https://github.com/nayrazanini" target="_blank" style="text-decoration:none; color:#333; font-weight:bold;">
-    🐙 GitHub
-  </a> |
-  <a href="https://wa.me/55SEUNUMERO" target="_blank" style="text-decoration:none; color:#25D366; font-weight:bold;">
-    📱 WhatsApp
-  </a>
-</p>
 
-  <!-- RODAPÉ -->
-  <footer class="text-center p-4 mt-8 text-sm text-gray-500">
+  <footer>
     © 2025 Náyra Zanini — Portfólio Educacional
   </footer>
 
