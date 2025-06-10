@@ -5,10 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>NÁYRA ZANINI | Portfólio</title>
   <style>
-    * {
-      box-sizing: border-box;
-    }
-
     body {
       background-color: #000000; 
       color: #ffffff; 
@@ -16,31 +12,27 @@
       line-height: 1.6;
       margin: 0;
       padding: 0 1rem;
+      font-size: 0.95rem;
     }
-
     strong {
       font-weight: 700; 
       color: #ffffff; 
     }
-
     a {
       color: #ffffff; 
       text-decoration: none;
       font-weight: 600;
       transition: color 0.3s ease;
     }
-
     a:hover {
       color: #bbbbbb; 
     }
-
     header, section, footer {
       max-width: 900px;
       margin-left: auto;
       margin-right: auto;
       padding: 1.5rem;
     }
-
     header {
       background: #111111;
       border-bottom: 1px solid #333333;
@@ -49,90 +41,67 @@
       text-align: center;
       border-radius: 8px;
     }
-
     h1 {
       color: #ffffff;
       font-size: 2.5rem;
       margin-bottom: 0.3rem;
     }
-
     h2 {
       border-bottom: 2px solid #ffffff;
       padding-bottom: 0.3rem;
       margin-bottom: 1rem;
       color: #ffffff;
-      font-size: 1.75rem;
+      font-size: 1.8rem;
     }
-
     h3 {
       color: #ffffff;
-      font-size: 1.1rem;
+      font-size: 1.15rem;
       margin-bottom: 0.5rem;
     }
-
     p, li {
       font-size: 1rem;
       margin-bottom: 1rem;
       color: #dddddd; 
     }
-
     ul {
       list-style-type: none;
       padding-left: 0;
     }
-
     li {
       background-color: #222222;
       padding: 1rem;
       border-radius: 8px;
       margin-bottom: 1rem;
     }
-
     footer {
       margin-top: 4rem;
       padding-bottom: 2rem;
-      font-size: 0.85rem;
+      font-size: 0.9rem;
       color: #888888;
       text-align: center;
     }
 
+    /* Links de contato */
+    .contato-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      justify-content: center;
+      margin: 1rem 0;
+    }
     .contato-links a {
-      margin: 0 0.5rem;
+      padding: 0.5rem 1rem;
+      border: 1px solid #ffffff44;
+      border-radius: 8px;
+      background-color: #111111;
+      color: #ffffff;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      font-size: 0.95rem;
     }
-
-    @media (max-width: 768px) {
-      h1 {
-        font-size: 2rem;
-      }
-
-      h2 {
-        font-size: 1.4rem;
-      }
-
-      h3 {
-        font-size: 1rem;
-      }
-
-      p, li {
-        font-size: 0.95rem;
-      }
-
-      header, section, footer {
-        padding: 1rem;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .contato-links {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .contato-links a {
-        margin: 0.3rem 0;
-        display: block;
-      }
+    .contato-links a:hover {
+      background-color: #ffffff22;
+      color: #ffffff;
     }
   </style>
 </head>
@@ -141,13 +110,13 @@
   <!-- CABEÇALHO -->
   <header>
     <h1>NÁYRA ZANINI</h1>
-    <nav class="contato-links" style="margin-top: 0.5rem; margin-bottom: 1.5rem;">
-      <a href="mailto:zanini.n@outlook.com.br">📧 Email</a> |
-      <a href="https://www.linkedin.com/in/nayra-zanini" target="_blank">💼 LinkedIn</a> |
-      <a href="https://github.com/nayrazanini" target="_blank">🐙 GitHub</a> |
+    <div class="contato-links">
+      <a href="mailto:zanini.n@outlook.com.br">📧 Email</a>
+      <a href="https://www.linkedin.com/in/nayra-zanini" target="_blank">💼 LinkedIn</a>
+      <a href="https://github.com/nayrazanini" target="_blank">🐙 GitHub</a>
       <a href="https://wa.me/55SEUNUMERO" target="_blank">📱 WhatsApp</a>
-    </nav>
-    <p><em><strong>Transição para a área de Tecnologia:</strong> unindo experiência administrativa e paixão por tecnologia.</em></p>
+    </div>
+    <p><em><strong> Transição para a área de Tecnologia:</strong> unindo experiência administrativa e paixão por tecnologia.</em></p>
   </header>
 
   <!-- SOBRE -->
@@ -155,7 +124,7 @@
     <h2>🌱 Sobre mim</h2>
     <p>
       Me formei em <strong>Administração com Ênfase em Tecnologia da Informação</strong> em 2014. Após isso, fiz uma <b>escolha</b> consciente e pausei minha carreira profissional 
-      por 13 anos para cuidar da minha avó. Foi um período de dedicação e aprendizado pessoal que me fez crescer de uma forma imensurável. Levo esse momento com orgulho e sem arrependimentos. 
+      por 13 anos para cuidar da minha avó. Foi um período de dedicação e aprendizado pessoal que me fez crescer de uma forma imensurável.
     </p>
     <p>
       Após o falecimento dela, retomei meu <b>propósito profissional</b> com foco total no meu desenvolvimento para ingressar na área de 
@@ -170,24 +139,34 @@
     </p>
   </section>
 
-  <!-- CONHECIMENTO -->
+  <!-- CONHECIMENTOS E FORMAÇÃO -->
   <section>
     <h2>🚀 Conhecimento e Formação Contínua</h2>
     <p>
       Acredito na importância da <strong>educação contínua e autodidata</strong>. Tenho buscado me desenvolver por meio da pós-graduação, cursos livres, projetos pessoais e prática constante.
+      Abaixo, compartilho dois temas estudados na pós em Engenharia de Software que já estão sendo aplicados em projetos:
     </p>
     <ul>
       <li>
         <h3>🧩 Paradigmas da Engenharia de Software</h3>
-        <p>
-          Estudo de conceitos fundamentais da engenharia de software: engenharia de requisitos, qualidade, gestão de riscos, mudanças e cronograma, métricas e testes. Os conhecimentos obtidos me capacitam a atuar com mais segurança no desenvolvimento e manutenção de software de qualidade.
-        </p>
+        <p>Exploração de tópicos fundamentais como:</p>
+        <ul>
+          <li>📌 Engenharia de Requisitos e Qualidade de Software</li>
+          <li>📌 Gestão de Riscos e Gerência de Configuração</li>
+          <li>📌 Cronogramação, Métricas e Testes de Software</li>
+        </ul>
+        <p><em>O objetivo é entender como estruturar projetos com base em planejamento, testes e medição para garantir entregas de valor.</em></p>
       </li>
+
       <li>
         <h3>📐 Modelagem Visual de Software</h3>
-        <p>
-          Domínio de técnicas de modelagem utilizando diagramas UML, SysML e BPMN. Desenvolvi habilidades com diagramas de requisitos, casos de uso, classe, sequência, estado e atividades — fundamentais para entender e comunicar o funcionamento de sistemas.
-        </p>
+        <p>Estudo prático de diagramas essenciais para representar requisitos, processos e estruturas de sistemas:</p>
+        <ul>
+          <li>📌 SysML: Diagrama de Requisitos</li>
+          <li>📌 UML: Casos de Uso, Classes, Sequência, Estado e Atividades</li>
+          <li>📌 BPMN: Diagrama de Fluxo de Processo</li>
+        </ul>
+        <p><em>A modelagem visual facilita a comunicação entre times e ajuda a transformar ideias em sistemas funcionais.</em></p>
       </li>
     </ul>
   </section>
@@ -213,9 +192,6 @@
   <footer>
     © 2025 Náyra Zanini — Portfólio Educacional
   </footer>
-
-</body>
-</html>
 
 </body>
 </html>
