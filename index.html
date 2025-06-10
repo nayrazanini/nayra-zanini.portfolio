@@ -5,34 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>NÁYRA ZANINI | Portfólio</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       background-color: #000000; 
       color: #ffffff; 
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      font-size: 0.95rem;
       line-height: 1.6;
       margin: 0;
       padding: 0 1rem;
     }
+
     strong {
       font-weight: 700; 
       color: #ffffff; 
     }
+
     a {
       color: #ffffff; 
       text-decoration: none;
       font-weight: 600;
       transition: color 0.3s ease;
     }
+
     a:hover {
       color: #bbbbbb; 
     }
+
     header, section, footer {
       max-width: 900px;
       margin-left: auto;
       margin-right: auto;
       padding: 1.5rem;
     }
+
     header {
       background: #111111;
       border-bottom: 1px solid #333333;
@@ -41,47 +49,90 @@
       text-align: center;
       border-radius: 8px;
     }
+
     h1 {
       color: #ffffff;
       font-size: 2.5rem;
       margin-bottom: 0.3rem;
     }
+
     h2 {
       border-bottom: 2px solid #ffffff;
       padding-bottom: 0.3rem;
       margin-bottom: 1rem;
       color: #ffffff;
-      font-size: 1.6rem;
+      font-size: 1.75rem;
     }
+
     h3 {
       color: #ffffff;
       font-size: 1.1rem;
       margin-bottom: 0.5rem;
     }
+
     p, li {
-      font-size: 0.95rem;
+      font-size: 1rem;
       margin-bottom: 1rem;
       color: #dddddd; 
     }
+
     ul {
       list-style-type: none;
       padding-left: 0;
     }
+
     li {
       background-color: #222222;
       padding: 1rem;
       border-radius: 8px;
       margin-bottom: 1rem;
     }
+
     footer {
       margin-top: 4rem;
       padding-bottom: 2rem;
-      font-size: 0.8rem;
+      font-size: 0.85rem;
       color: #888888;
       text-align: center;
     }
+
     .contato-links a {
       margin: 0 0.5rem;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      h2 {
+        font-size: 1.4rem;
+      }
+
+      h3 {
+        font-size: 1rem;
+      }
+
+      p, li {
+        font-size: 0.95rem;
+      }
+
+      header, section, footer {
+        padding: 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .contato-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .contato-links a {
+        margin: 0.3rem 0;
+        display: block;
+      }
     }
   </style>
 </head>
@@ -90,14 +141,13 @@
   <!-- CABEÇALHO -->
   <header>
     <h1>NÁYRA ZANINI</h1>
-    
     <nav class="contato-links" style="margin-top: 0.5rem; margin-bottom: 1.5rem;">
-      <a href="mailto:zanini.n@outlook.com.br"> 📧 Email</a> |
+      <a href="mailto:zanini.n@outlook.com.br">📧 Email</a> |
       <a href="https://www.linkedin.com/in/nayra-zanini" target="_blank">💼 LinkedIn</a> |
       <a href="https://github.com/nayrazanini" target="_blank">🐙 GitHub</a> |
-      <a href="https://wa.me/5511981368778" target="_blank">📱 WhatsApp</a>
+      <a href="https://wa.me/55SEUNUMERO" target="_blank">📱 WhatsApp</a>
     </nav>
-    <p><em><strong> Transição para a área de Tecnologia:</strong> unindo experiência administrativa e paixão por tecnologia.</em></p>
+    <p><em><strong>Transição para a área de Tecnologia:</strong> unindo experiência administrativa e paixão por tecnologia.</em></p>
   </header>
 
   <!-- SOBRE -->
@@ -120,21 +170,24 @@
     </p>
   </section>
 
-  <!-- CONHECIMENTOS E FORMAÇÃO -->
+  <!-- CONHECIMENTO -->
   <section>
     <h2>🚀 Conhecimento e Formação Contínua</h2>
     <p>
-      Acredito na importância da <strong>educação contínua e autodidata</strong>. Além do Bacharelado, Técnologo e Pós-Graduação tenho buscado me desenvolver através de cursos livres, projetos pessoais e prática constante.
-      Esta seção apresenta os principais conteúdos estudados e como eles podem ser aplicados em soluções reais no mercado de tecnologia.
+      Acredito na importância da <strong>educação contínua e autodidata</strong>. Tenho buscado me desenvolver por meio da pós-graduação, cursos livres, projetos pessoais e prática constante.
     </p>
     <ul>
       <li>
         <h3>🧩 Paradigmas da Engenharia de Software</h3>
-        <p> Aprendizado sobre levantamento de requisitos de software, qualidade, testes, métricas, riscos e mudanças. Compreensão ampla sobre o ciclo de vida de software, visando boas práticas, documentação e controle.</p>
+        <p>
+          Estudo de conceitos fundamentais da engenharia de software: engenharia de requisitos, qualidade, gestão de riscos, mudanças e cronograma, métricas e testes. Os conhecimentos obtidos me capacitam a atuar com mais segurança no desenvolvimento e manutenção de software de qualidade.
+        </p>
       </li>
       <li>
         <h3>📐 Modelagem Visual de Software</h3>
-        <p> Foco na prática de modelagem de software através de diagramas de requisitos (SysML), casos de uso, classes, sequência, estados, atividades e BPMN. Aprendizado sobre a comunicação e compreensão de sistemas complexos.</p>
+        <p>
+          Domínio de técnicas de modelagem utilizando diagramas UML, SysML e BPMN. Desenvolvi habilidades com diagramas de requisitos, casos de uso, classe, sequência, estado e atividades — fundamentais para entender e comunicar o funcionamento de sistemas.
+        </p>
       </li>
     </ul>
   </section>
@@ -160,6 +213,9 @@
   <footer>
     © 2025 Náyra Zanini — Portfólio Educacional
   </footer>
+
+</body>
+</html>
 
 </body>
 </html>
