@@ -6,108 +6,108 @@
   <title>NÁYRA ZANINI | Portfólio</title>
   <style>
     body {
-      background-color: #000;
-      color: #fff;
+      background-color: #000000; 
+      color: #ffffff; 
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
       margin: 0;
       padding: 0;
+      font-size: 0.95rem;
+    }
+    strong {
+      font-weight: 700; 
+      color: #ffffff; 
+    }
+    a {
+      color: #ffffff; 
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    a:hover {
+      color: #bbbbbb; 
     }
     header, section, footer {
-      max-width: 1200px;
-      margin: auto;
-      padding: 2rem 1rem;
+      max-width: 1200px; /* Aumentado */
+      margin-left: auto;
+      margin-right: auto;
+      padding: 2rem 3rem; /* Aumentado nas laterais */
     }
     header {
-      background-color: #111;
+      background: #111111;
+      border-bottom: 1px solid #333333;
+      margin-top: 2rem;
+      margin-bottom: 3rem;
       text-align: center;
       border-radius: 8px;
-      margin-top: 2rem;
     }
     h1 {
-      margin: 0.5rem;
+      color: #ffffff;
       font-size: 2.5rem;
+      margin-bottom: 0.3rem;
     }
     h2 {
-      font-size: 1.8rem;
-      border-bottom: 2px solid #fff;
+      border-bottom: 2px solid #ffffff;
       padding-bottom: 0.3rem;
       margin-bottom: 1rem;
+      color: #ffffff;
+      font-size: 1.8rem;
     }
     h3 {
-      font-size: 1.3rem;
+      color: #ffffff;
+      font-size: 1.15rem;
       margin-bottom: 0.5rem;
     }
     p, li {
       font-size: 1rem;
-      line-height: 1.6;
+      margin-bottom: 1rem;
+      color: #dddddd; 
     }
     ul {
       list-style-type: none;
-      padding: 0;
+      padding-left: 0;
     }
     li {
-      background-color: #222;
+      background-color: #222222;
       padding: 1rem;
       border-radius: 8px;
       margin-bottom: 1rem;
     }
-    a {
-      color: #fff;
-      text-decoration: none;
-      transition: color 0.3s ease;
+    footer {
+      margin-top: 4rem;
+      padding-bottom: 2rem;
+      font-size: 0.9rem;
+      color: #888888;
+      text-align: center;
     }
-    a:hover {
-      color: #bbb;
-    }
-    .menu {
-      background-color: #111;
-      padding: 0.5rem 0;
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-    }
-    .dropdown {
-      position: relative;
-      display: inline-block;
-    }
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: #222;
-      min-width: 200px;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      z-index: 1;
-    }
-    .dropdown-content a {
-      color: #fff;
-      padding: 12px 16px;
-      text-decoration: none;
-      display: block;
-    }
-    .dropdown-content a:hover {
-      background-color: #333;
-    }
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
+
+    /* Links de contato */
     .contato-links {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
       gap: 0.5rem;
-      margin-bottom: 1rem;
+      justify-content: center;
+      margin: 1rem 0;
     }
     .contato-links a {
       padding: 0.5rem 1rem;
       border: 1px solid #ffffff44;
       border-radius: 8px;
-      background-color: #111;
-      color: #fff;
+      background-color: #111111;
+      color: #ffffff;
       font-weight: 500;
+      transition: all 0.3s ease;
+      font-size: 0.95rem;
+    }
+    .contato-links a:hover {
+      background-color: #ffffff22;
+      color: #ffffff;
     }
   </style>
 </head>
 <body>
+
+  <!-- CABEÇALHO -->
   <header>
     <h1>NÁYRA ZANINI</h1>
     <div class="contato-links">
@@ -116,37 +116,10 @@
       <a href="https://github.com/nayrazanini" target="_blank">🐙 GitHub</a>
       <a href="https://wa.me/5511981368778" target="_blank">📱 WhatsApp</a>
     </div>
-    <p><em><strong>Transição para a área de Tecnologia:</strong> unindo experiência administrativa e paixão por tecnologia.</em></p>
+    <p><em><strong> Transição para a área de Tecnologia:</strong> unindo experiência administrativa e paixão por tecnologia.</em></p>
   </header>
 
-  <nav class="menu">
-    <div class="dropdown">
-      <span>📘 Pós-graduação</span>
-      <div class="dropdown-content">
-        <a href="#paradigmas">Paradigmas de Engenharia de Software</a>
-        <a href="#modelagem">Modelagem Visual de Software</a>
-        <a href="#projeto">Projeto de Software</a>
-      </div>
-    </div>
-    <div class="dropdown">
-      <span>📚 Autoestudo</span>
-      <div class="dropdown-content">
-        <a href="#java">Estudo de Java</a>
-        <a href="#logica">Lógica de Programação</a>
-        <a href="#scrum">Metodologias Ágeis - Scrum</a>
-        <a href="#ingles">Prática de Inglês</a>
-      </div>
-    </div>
-    <div class="dropdown">
-      <span>💼 Projetos</span>
-      <div class="dropdown-content">
-        <a href="#shadowplay">ShadowPlay</a>
-        <a href="#tecnotion">Tecnotion</a>
-        <a href="#autodesenvolvimento">Autodesenvolvimento</a>
-      </div>
-    </div>
-  </nav>
-
+  <!-- SOBRE -->
   <section style="background-color: #000000; color: #ffffff; padding: 30px; border-radius: 12px;">
     <h2>🌱 Sobre mim</h2>
     <p>
@@ -163,9 +136,118 @@
 </p>
   </section>
 
+  <!-- CONHECIMENTOS E FORMAÇÃO -->
+ <section>
+  <h2>🚀 Conhecimento e Formação - <i>O que estou estudando? </i> </h2>
+  <p>
+    Acredito na importância da <strong>educação contínua e autodidata</strong>. Tenho buscado me desenvolver por meio da pós-graduação, cursos livres, projetos pessoais e prática constante.
+    Abaixo, compartilho alguns temas e trilhas de estudo que venho desenvolvendo para reforçar minha transição para a área de tecnologia:
+  </p>
+  <ul>
+    <li>
+      <h3>🧩 Paradigmas da Engenharia de Software</h3>
+      <p>Exploração de tópicos fundamentais como:</p>
+      <ul style="margin: 0; padding: 0; list-style-position: inside;">
+        <li style="margin: 0; padding: 0; line-height: 1.2;">📌 Engenharia de Requisitos e Qualidade de Software</li>
+        <li style="margin: 0; padding: 0; line-height: 1.2;">📌 Gestão de Riscos e Gerência de Configuração</li>
+        <li style="margin: 0; padding: 0; line-height: 1.2;">📌 Cronogramação, Métricas e Testes de Software</li>
+      </ul>
+      <p><em>O objetivo é entender como estruturar projetos com base em planejamento, testes e medição para garantir entregas de valor.</em></p>
+    </li>
 
-  <!-- Adicione aqui as seções com os ids para cada item do menu -->
+    <li>
+      <h3>📐 Modelagem Visual de Software</h3>
+      <p>Estudo prático de diagramas essenciais para representar requisitos, processos e estruturas de sistemas:</p>
+      <ul style="margin: 0; padding: 0; list-style-position: inside;">
+        <li style="margin: 0; padding: 0; line-height: 1.2;">📌 SysML: Diagrama de Requisitos</li>
+        <li style="margin: 0; padding: 0; line-height: 1.2;">📌 UML: Casos de Uso, Classes, Sequência, Estado e Atividades</li>
+        <li style="margin: 0; padding: 0; line-height: 1.2;">📌 BPMN: Diagrama de Fluxo de Processo</li>
+      </ul>
+      <p><em>A modelagem visual facilita a comunicação entre times e ajuda a transformar ideias em sistemas funcionais.</em></p>
+    </li>
+ <li>
+      <h3>📚 Projeto de Software</h3>
+      <p>Disciplina prática voltada à construção de artefatos e documentos essenciais para o planejamento, modelagem e validação de sistemas reais.</p>
+      <ul style="margin: 0; padding: 0; list-style-position: inside;">
+        <li style="margin: 0; padding: 0; line-height: 1.2;">📌 Definição de Persona: levantamento do perfil ideal do usuário do sistema</li>
+        <li style="margin: 0; padding: 0; line-height: 1.2;">📌 Mapa de Empatia: entendimento das emoções, comportamentos e motivações do usuário</li>
+      </ul>
+      <p><em>O objetivo é documentar o sistema desde a perspectiva do usuário, fortalecendo a experiência e usabilidade desde a concepção da ideia.</em></p>
+    </li>
+
+    <li>
+      <h3>☕ Estudo de Java</h3>
+      <p> Estudando Java por meio do curso "<strong>Java COMPLETO - Do Zero ao Profissional + Projetos!</strong>" pela Udemy Academy, com foco em lógica, orientação a objetos e fundamentos da linguagem.</p>
+      <p><em>Objetivo: dominar a linguagem Java para aplicar em projetos backend e reforçar minha base em programação.</em></p>
+    </li>
+
+    <li>
+      <h3>🧠 Lógica de Programação</h3>
+      <p>Estudo contínuo de <strong>Lógica de Programação</strong> pela plataforma <strong>DIO (Digital Innovation One)</strong>, com foco na construção de algoritmos, raciocínio computacional e resolução de problemas com JavaScript e Java.</p>
+      <p><em>Objetivo: fortalecer minha base de programação e pensar como desenvolvedora.</em></p>
+    </li>
+
+    <li>
+      <h3>📈 Metodologias Ágeis - Certificação Scrum</h3>
+      <p> Me preparando para realizar a certificação <strong>Scrum Fundamentals</strong>, após isso dar continuidade para a certificação <strong>Scrum Master</strong>. Estudo os conceitos, práticas e papéis do framework Scrum com base em materiais oficiais e simulados de certificação.</p>
+      <p><em>Objetivo: aplicar os princípios ágeis em projetos reais e me posicionar para oportunidades na área de qualidade, análise e gestão ágil.</em></p>
+    </li>
+
+    <li>
+      <h3>🎧 Prática de Inglês</h3>
+      <p>Prática diária de inglês com foco em <strong>Speaking, Listening e Writing</strong>, utilizando vídeos, áudios e técnicas como <em>shadowing</em> com apoio de inteligência artificial para análise de pronúncia e evolução no idioma.</p>
+      <p><em>Objetivo: atingir fluência funcional para aplicar o idioma em estudos técnicos, networking e oportunidades internacionais.</em></p>
+    </li>
+
+  </ul>
+
+  <p><strong>📅 Organização dos Estudos:</strong> Utilizo planejamento diário personalizado com o apoio da Inteligência Artificial para manter constância, foco e progresso em todas as trilhas de aprendizado. Através da organização, busco ter eficiência e eficácia no planejamento para estudos.</p>
+</section>
+
+<section>
+  <h2>💼 Projetos em Desenvolvimento</h2>
+  <ul>
+<li>
+  <h3>🗣️ ShadowPlay – Prática de Inglês com IA e Vídeos do YouTube</h3>
+  <p><strong>Objetivo:</strong> Criar uma plataforma colaborativa que ajude estudantes de inglês a praticar <em>shadowing</em> com vídeos reais, utilizando inteligência artificial para personalização e feedback.</p>
+  <p><strong>Diferenciais:</strong></p>
+  <ul style="margin: 0; padding: 0; list-style-position: inside;">
+    <li style="margin: 0; padding: 0; line-height: 1.2;">🎯 Reunir vídeo, transcrição, tradução e prática no mesmo ambiente.</li>
+    <li style="margin: 0; padding: 0; line-height: 1.2;">🤖 IA sugere vídeos por nível, tema e tempo disponível.</li>
+    <li style="margin: 0; padding: 0; line-height: 1.2;">🔁 Ferramentas de repetição, velocidade, gravação de voz e análise comparativa.</li>
+    <li style="margin: 0; padding: 0; line-height: 1.2;">📚 Técnicas de estudo explicadas e personalizadas: shadowing, pomodoro, repetição espaçada.</li>
+    <li style="margin: 0; padding: 0; line-height: 1.2;">🌍 Projeto colaborativo e educativo com créditos aos criadores de conteúdo.</li>
+  </ul>
+  <p>
+    <strong>🔗 Acesse:</strong>
+    <a href="https://nayrazanini.github.io/shadowplay/" target="_blank">
+      shadowplay - github.io/shadowplay
+    </a>
+  </p>
+  <p>
+    <strong>📖 Explicação do index:</strong>
+    <a href="https://github.com/nayrazanini/shadowplay/blob/main/explicacao_index.md" target="_blank">
+      Veja como o código da página foi estruturado e comentado
+    </a>
+  </p>
+</li>
+    <li>
+      <h3>📱 TECNOTION</h3>
+      <p>Plataforma de microcursos criada para auxiliar pessoas com dificuldade em tecnologia. O objetivo é ensinar, com paciência e clareza, como utilizar celulares, aplicativos e recursos digitais com <strong>autonomia</strong>.</p>
+      <p><em>Em desenvolvimento</em></p>
+    </li>
+    <li>
+      <h3>🧠 Autodesenvolvimento Digital</h3>
+      <p>Projeto de apoio ao crescimento pessoal com base em psicologia, neurociência e ferramentas tecnológicas. Visa criar fases, desafios e modelos interativos de <strong>autoaperfeiçoamento</strong>.</p>
+      <p><em>Em desenvolvimento</em></p>
+    </li>
+  </ul>
+</section>
+
+  <!-- RODAPÉ -->
+  <footer>
+    © 2025 Náyra Zanini — Portfólio Educacional
+  </footer>
 
 </body>
 </html>
-
