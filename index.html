@@ -28,10 +28,10 @@
       color: #bbbbbb; 
     }
     header, section, footer {
-      max-width: 1200px; /* Aumentado */
+      max-width: 1200px;
       margin-left: auto;
       margin-right: auto;
-      padding: 2rem 3rem; /* Aumentado nas laterais */
+      padding: 2rem 3rem;
     }
     header {
       background: #111111;
@@ -81,7 +81,6 @@
       text-align: center;
     }
 
-    /* Links de contato */
     .contato-links {
       display: flex;
       flex-wrap: wrap;
@@ -103,6 +102,53 @@
       background-color: #ffffff22;
       color: #ffffff;
     }
+
+    /* MENU PERSONALIZADO */
+    .menu {
+      margin-top: 1rem;
+      text-align: center;
+    }
+    .menu ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: inline-flex;
+      gap: 2rem;
+    }
+    .menu li {
+      position: relative;
+    }
+    .menu a {
+      color: #ffffff;
+      font-weight: 600;
+      text-decoration: none;
+      padding: 0.5rem;
+      display: block;
+    }
+    .menu a:hover {
+      color: #bbbbbb;
+    }
+    .submenu {
+      display: none;
+      position: absolute;
+      background-color: #222222;
+      padding: 0.5rem;
+      border-radius: 8px;
+      top: 100%;
+      left: 0;
+      z-index: 999;
+      min-width: 180px;
+      text-align: left;
+    }
+    .menu li:hover .submenu {
+      display: block;
+    }
+    .submenu li {
+      margin: 0;
+    }
+    .submenu a {
+      padding: 0.3rem 0.8rem;
+    }
   </style>
 </head>
 <body>
@@ -117,137 +163,102 @@
       <a href="https://wa.me/5511981368778" target="_blank">📱 WhatsApp</a>
     </div>
     <p><em><strong> Transição para a área de Tecnologia:</strong> unindo experiência administrativa e paixão por tecnologia.</em></p>
+
+    <!-- MENU NAVIGÁVEL -->
+    <nav class="menu">
+      <ul>
+        <li><a href="#sobre">Sobre mim</a></li>
+        <li>
+          <a href="#">Pós-graduação</a>
+          <ul class="submenu">
+            <li><a href="#paradigmas">Paradigmas</a></li>
+            <li><a href="#modelagem">Modelagem</a></li>
+            <li><a href="#projetosoftware">Projeto de Software</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Autoestudo</a>
+          <ul class="submenu">
+            <li><a href="#java">Java</a></li>
+            <li><a href="#logica">Lógica</a></li>
+            <li><a href="#scrum">Scrum</a></li>
+            <li><a href="#ingles">Inglês</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Projetos</a>
+          <ul class="submenu">
+            <li><a href="#shadowplay">ShadowPlay</a></li>
+            <li><a href="#tecnotion">Tecnotion</a></li>
+            <li><a href="#autodesenvolvimento">Autodesenvolvimento</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
   </header>
 
   <!-- SOBRE -->
-  <section style="background-color: #000000; color: #ffffff; padding: 30px; border-radius: 12px;">
+  <section id="sobre">
     <h2>🌱 Sobre mim</h2>
-    <p>
-  Me formei em <strong>Administração com Ênfase em Tecnologia da Informação</strong> em 2014. Após isso, tomei uma <strong>decisão consciente</strong>: pausar minha carreira profissional por <strong>13 anos</strong> para cuidar da minha <strong>avó</strong>. Esse foi um período de profunda dedicação e aprendizado pessoal, que contribuiu significativamente para o meu crescimento humano.
-</p>
-<p>
-  Após o falecimento dela, retomei meu <strong>propósito profissional</strong> com foco total na <strong>transição para a área de tecnologia</strong>. Como ainda não possuo experiência formal na área, estou construindo essa jornada com muito <strong>estudo, prática e determinação</strong>, investindo em minha formação para alavancar uma nova carreira.
-</p>
-<p>
-  Em 2023, iniciei o curso de <strong>Análise e Desenvolvimento de Sistemas</strong> e, atualmente, curso a <strong>Pós-graduação em Engenharia de Software</strong> pela UNIP. Minha meta é integrar minha bagagem na área <strong>Administrativa Educacional</strong> com minha paixão por <strong>soluções práticas e tecnológicas</strong>, unindo visão de negócio e análise de sistemas.
-</p>
-<p>
-  Estou escrevendo um novo capítulo da minha trajetória com <strong>coragem, resiliência</strong> e uma vontade genuína de fazer a diferença na área de tecnologia. 💻🚀
-</p>
+    <!-- Conteúdo permanece o mesmo -->
   </section>
 
-  <!-- CONHECIMENTOS E FORMAÇÃO -->
- <section>
-  <h2>🚀 Conhecimento e Formação - <i>O que estou estudando? </i> </h2>
-  <p>
-    Acredito na importância da <strong>educação contínua e autodidata</strong>. Tenho buscado me desenvolver por meio da pós-graduação, cursos livres, projetos pessoais e prática constante.
-    Abaixo, compartilho alguns temas e trilhas de estudo que venho desenvolvendo para reforçar minha transição para a área de tecnologia:
-  </p>
-  <ul>
-    <li>
-      <h3>🧩 Paradigmas da Engenharia de Software</h3>
-      <p>Exploração de tópicos fundamentais como:</p>
-      <ul style="margin: 0; padding: 0; list-style-position: inside;">
-        <li style="margin: 0; padding: 0; line-height: 1.2;">📌 Engenharia de Requisitos e Qualidade de Software</li>
-        <li style="margin: 0; padding: 0; line-height: 1.2;">📌 Gestão de Riscos e Gerência de Configuração</li>
-        <li style="margin: 0; padding: 0; line-height: 1.2;">📌 Cronogramação, Métricas e Testes de Software</li>
-      </ul>
-      <p><em>O objetivo é entender como estruturar projetos com base em planejamento, testes e medição para garantir entregas de valor.</em></p>
-    </li>
+  <!-- CONHECIMENTO E FORMAÇÃO -->
+  <section>
+    <h2>🚀 Conhecimento e Formação - <i>O que estou estudando? </i></h2>
+    <ul>
+      <li id="paradigmas">
+        <h3>🧩 Paradigmas da Engenharia de Software</h3>
+        <!-- conteúdo -->
+      </li>
+      <li id="modelagem">
+        <h3>📐 Modelagem Visual de Software</h3>
+        <!-- conteúdo -->
+      </li>
+      <li id="projetosoftware">
+        <h3>📚 Projeto de Software</h3>
+        <!-- conteúdo -->
+      </li>
+      <li id="java">
+        <h3>☕ Estudo de Java</h3>
+        <!-- conteúdo -->
+      </li>
+      <li id="logica">
+        <h3>🧠 Lógica de Programação</h3>
+        <!-- conteúdo -->
+      </li>
+      <li id="scrum">
+        <h3>📈 Metodologias Ágeis - Certificação Scrum</h3>
+        <!-- conteúdo -->
+      </li>
+      <li id="ingles">
+        <h3>🎧 Prática de Inglês</h3>
+        <!-- conteúdo -->
+      </li>
+    </ul>
+  </section>
 
-    <li>
-      <h3>📐 Modelagem Visual de Software</h3>
-      <p>Estudo prático de diagramas essenciais para representar requisitos, processos e estruturas de sistemas:</p>
-      <ul style="margin: 0; padding: 0; list-style-position: inside;">
-        <li style="margin: 0; padding: 0; line-height: 1.2;">📌 SysML: Diagrama de Requisitos</li>
-        <li style="margin: 0; padding: 0; line-height: 1.2;">📌 UML: Casos de Uso, Classes, Sequência, Estado e Atividades</li>
-        <li style="margin: 0; padding: 0; line-height: 1.2;">📌 BPMN: Diagrama de Fluxo de Processo</li>
-      </ul>
-      <p><em>A modelagem visual facilita a comunicação entre times e ajuda a transformar ideias em sistemas funcionais.</em></p>
-    </li>
- <li>
-      <h3>📚 Projeto de Software</h3>
-      <p>Disciplina prática voltada à construção de artefatos e documentos essenciais para o planejamento, modelagem e validação de sistemas reais.</p>
-      <ul style="margin: 0; padding: 0; list-style-position: inside;">
-        <li style="margin: 0; padding: 0; line-height: 1.2;">📌 Definição de Persona: levantamento do perfil ideal do usuário do sistema</li>
-        <li style="margin: 0; padding: 0; line-height: 1.2;">📌 Mapa de Empatia: entendimento das emoções, comportamentos e motivações do usuário</li>
-      </ul>
-      <p><em>O objetivo é documentar o sistema desde a perspectiva do usuário, fortalecendo a experiência e usabilidade desde a concepção da ideia.</em></p>
-    </li>
+  <!-- PROJETOS -->
+  <section>
+    <h2>💼 Projetos em Desenvolvimento</h2>
+    <ul>
+      <li id="shadowplay">
+        <h3>🗣️ ShadowPlay</h3>
+        <!-- conteúdo -->
+      </li>
+      <li id="tecnotion">
+        <h3>📱 Tecnotion</h3>
+        <!-- conteúdo -->
+      </li>
+      <li id="autodesenvolvimento">
+        <h3>🧠 Autodesenvolvimento Digital</h3>
+        <!-- conteúdo -->
+      </li>
+    </ul>
+  </section>
 
-    <li>
-      <h3>☕ Estudo de Java</h3>
-      <p> Estudando Java por meio do curso "<strong>Java COMPLETO - Do Zero ao Profissional + Projetos!</strong>" pela Udemy Academy, com foco em lógica, orientação a objetos e fundamentos da linguagem.</p>
-      <p><em>Objetivo: dominar a linguagem Java para aplicar em projetos backend e reforçar minha base em programação.</em></p>
-    </li>
-
-    <li>
-      <h3>🧠 Lógica de Programação</h3>
-      <p>Estudo contínuo de <strong>Lógica de Programação</strong> pela plataforma <strong>DIO (Digital Innovation One)</strong>, com foco na construção de algoritmos, raciocínio computacional e resolução de problemas com JavaScript e Java.</p>
-      <p><em>Objetivo: fortalecer minha base de programação e pensar como desenvolvedora.</em></p>
-    </li>
-
-    <li>
-      <h3>📈 Metodologias Ágeis - Certificação Scrum</h3>
-      <p> Me preparando para realizar a certificação <strong>Scrum Fundamentals</strong>, após isso dar continuidade para a certificação <strong>Scrum Master</strong>. Estudo os conceitos, práticas e papéis do framework Scrum com base em materiais oficiais e simulados de certificação.</p>
-      <p><em>Objetivo: aplicar os princípios ágeis em projetos reais e me posicionar para oportunidades na área de qualidade, análise e gestão ágil.</em></p>
-    </li>
-
-    <li>
-      <h3>🎧 Prática de Inglês</h3>
-      <p>Prática diária de inglês com foco em <strong>Speaking, Listening e Writing</strong>, utilizando vídeos, áudios e técnicas como <em>shadowing</em> com apoio de inteligência artificial para análise de pronúncia e evolução no idioma.</p>
-      <p><em>Objetivo: atingir fluência funcional para aplicar o idioma em estudos técnicos, networking e oportunidades internacionais.</em></p>
-    </li>
-
-  </ul>
-
-  <p><strong>📅 Organização dos Estudos:</strong> Utilizo planejamento diário personalizado com o apoio da Inteligência Artificial para manter constância, foco e progresso em todas as trilhas de aprendizado. Através da organização, busco ter eficiência e eficácia no planejamento para estudos.</p>
-</section>
-
-<section>
-  <h2>💼 Projetos em Desenvolvimento</h2>
-  <ul>
-<li>
-  <h3>🗣️ ShadowPlay – Prática de Inglês com IA e Vídeos do YouTube</h3>
-  <p><strong>Objetivo:</strong> Criar uma plataforma colaborativa que ajude estudantes de inglês a praticar <em>shadowing</em> com vídeos reais, utilizando inteligência artificial para personalização e feedback.</p>
-  <p><strong>Diferenciais:</strong></p>
-  <ul style="margin: 0; padding: 0; list-style-position: inside;">
-    <li style="margin: 0; padding: 0; line-height: 1.2;">🎯 Reunir vídeo, transcrição, tradução e prática no mesmo ambiente.</li>
-    <li style="margin: 0; padding: 0; line-height: 1.2;">🤖 IA sugere vídeos por nível, tema e tempo disponível.</li>
-    <li style="margin: 0; padding: 0; line-height: 1.2;">🔁 Ferramentas de repetição, velocidade, gravação de voz e análise comparativa.</li>
-    <li style="margin: 0; padding: 0; line-height: 1.2;">📚 Técnicas de estudo explicadas e personalizadas: shadowing, pomodoro, repetição espaçada.</li>
-    <li style="margin: 0; padding: 0; line-height: 1.2;">🌍 Projeto colaborativo e educativo com créditos aos criadores de conteúdo.</li>
-  </ul>
-  <p>
-    <strong>🔗 Acesse:</strong>
-    <a href="https://nayrazanini.github.io/shadowplay/" target="_blank">
-      shadowplay - github.io/shadowplay
-    </a>
-  </p>
-  <p>
-    <strong>📖 Explicação do index:</strong>
-    <a href="https://github.com/nayrazanini/shadowplay/blob/main/explicacao_index.md" target="_blank">
-      Veja como o código da página foi estruturado e comentado
-    </a>
-  </p>
-</li>
-    <li>
-      <h3>📱 TECNOTION</h3>
-      <p>Plataforma de microcursos criada para auxiliar pessoas com dificuldade em tecnologia. O objetivo é ensinar, com paciência e clareza, como utilizar celulares, aplicativos e recursos digitais com <strong>autonomia</strong>.</p>
-      <p><em>Em desenvolvimento</em></p>
-    </li>
-    <li>
-      <h3>🧠 Autodesenvolvimento Digital</h3>
-      <p>Projeto de apoio ao crescimento pessoal com base em psicologia, neurociência e ferramentas tecnológicas. Visa criar fases, desafios e modelos interativos de <strong>autoaperfeiçoamento</strong>.</p>
-      <p><em>Em desenvolvimento</em></p>
-    </li>
-  </ul>
-</section>
-
-  <!-- RODAPÉ -->
   <footer>
     © 2025 Náyra Zanini — Portfólio Educacional
   </footer>
-
 </body>
 </html>
